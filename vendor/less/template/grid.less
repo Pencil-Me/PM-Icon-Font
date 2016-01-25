@@ -1,0 +1,114 @@
+// Gutter
+.colwidth ( @col:1 ) {
+    width:(@max-width - @gutter)*100/@max-width*1%;
+    & when (@col<12) {
+        width:((((@max-width - @gutter*12)/12*@col+(@col - 1)*@gutter)*100)/@max-width)*1%;
+    } 
+}
+.inside {
+    clear: both;
+	display: block;
+	margin:0 auto;
+	padding: 0 @gutter*1px 0 @gutter*1px;
+	max-width: @max-width*1px;
+}
+.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12 {
+	clear: none;display: inline-block;
+	margin-bottom: @gutter*0.1;
+	margin-left:-@gutter*0.1px;
+	margin-right:((100*@gutter)/@max-width)*0.7%;
+	position: relative;
+	padding:1em;
+	vertical-align:top;
+}
+.span1  { 
+//    width: 7.63358%;
+    .colwidth(1); 
+}
+.span2  { 
+//    width: 16.03053%;
+    .colwidth(2); 
+}
+.span3  { 
+//    width: 24.42748%;
+    .colwidth(3); 
+}
+.span4  { 
+//    width: 32.82442%;
+    .colwidth(4); 
+}
+.span5  { 
+//    width: 41.22137%;
+    .colwidth(5); 
+}
+.span6  { 
+//    width: 49.61832%;
+    .colwidth(6); 
+}
+.span7  { 
+//    width: 58.01526%;
+    .colwidth(7); 
+}
+.span8  { 
+//    width: 66.41221%;
+    .colwidth(8); 
+}
+.span9  { 
+//    width: 74.80916%;
+    .colwidth(9); 
+}
+.span10 { 
+//    width: 83.2061%;
+    .colwidth(10); 
+}
+.span11 { 
+//    width: 91.60305%;
+    .colwidth(11);
+}
+.span12 { 
+//    width: 99.62%;
+    .colwidth(12); 
+}
+
+@media (min-width:0px) and (max-width:600px) {
+    .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12 {
+    //    width: 99.62%;
+        .colwidth(12); 
+    }
+}
+@media (min-width:600px) and (max-width:955px) {
+    .span1,.span2,.span3,.span4,.span5,.span6 {
+    //    width: 99.62%;
+        .colwidth(6); 
+    }
+    .span7,.span8,.span9,.span10,.span11,.span12 {
+    //    width: 99.62%;
+        .colwidth(12); 
+    }
+}
+
+.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12 {
+    & .span1,& .span2,& .span3,& .span4,& .span5,
+    & .span6,& .span7,& .span8,& .span9,& .span10,
+    & .span11,& .span12 {
+        padding:0 !important;
+    }
+}
+
+// sticky footer
+html,body {
+	height: 100%;
+}
+#stickywrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto @footerheight*-1; /* the bottom margin is the negative value of the footer's height */
+}
+.push {
+    clear: both;
+}
+footer, .push {
+	height: @footerheight;
+	max-height: @footerheight; /* '.push' must be the same height as 'footer' */
+}

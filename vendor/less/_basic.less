@@ -1,0 +1,28 @@
+body {
+  font-family: @font-family;
+  color:lighten(@primary,20%);
+  .font-size();
+  line-height:1.4em;
+  .gradient(darken(@primary,35%), darken(@secondary,30%));
+  background-size: cover;
+}
+header{
+  width:100%;
+}
+.wrapper {
+  display: block;
+  max-width: @max-width*1px;
+  margin: 0 auto;
+}
+.section {
+  padding: @gutter*1px;
+}
+
+
+[data-icon] {
+  margin-right:0.5em;
+}
+
+img {
+  max-width:100%;
+}

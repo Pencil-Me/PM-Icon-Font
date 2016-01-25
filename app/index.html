@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="de" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="de" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="de" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="de" ng-app="myApp" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/pm_ui_kit.min.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="webfont/pmiconfont.min.css" type="text/css" charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.min.css" type="text/css" media="all" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body>
+
+<div id="home"></div>
+<header class="sticky-header">
+    <div class="wrapper">
+        <div class="logo"><a href="index.html">PM-Iconset</a></div>
+
+        <nav id="mainnav" class="nav">
+            <ul>
+                <li><a href="#/home" data-nav="home">home</a></li>
+                <li><a href="#/howto" data-nav="howto">how to start</a></li>
+                <li><a href="#/icons" data-nav="icons">icons</a></li>
+                <li><a href="#/examples" data-nav="examples">examples</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<main>
+    <article class="col-lg-12">
+        <div class="Version">
+            Version <span app-version></span>   ·   Erstellt & gepflegt von Johannes Kromer
+        </div>
+    </article>
+    <div ng-view></div>
+    <div class="push"></div>
+</main>
+
+<footer class="container">
+    <section class="section align-center text-small">
+        <div class="wrapper">
+            <div class="col-md-4 col-lg-4 align-left">
+                <span class="primary">
+                    <strong><a href="#" class="fn url">PM-Iconset</a></strong>
+                    <span class="role">Ein freies Webfont-Iconset</span>
+                </span>
+                <p>&copy; 2014 <a href="http://www.pencil-me.de">Pencil&Me</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-4 right align-right">
+                <a href="#/impressum">Impressum & Disclaimer</a>
+            </div>
+
+            <div class="col-md-4 col-lg-4">
+                <div class="center">
+                    <p>Wenn das Projekt gefällt, spendiert mir doch einfach einen Kaffee.</p>
+                    <form class="center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="HUM2Z5NZNJQBY">
+                        <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-lg-4">
+                <div class="center">
+                    powered by<br>
+                    <a href="https://github.com/Pencil-Me/PM_UI_Kit" target="_blank" title="PM-UI-Kit">PM-UI-Kit</a> &nbsp;|&nbsp;
+                    <a href="https://angularjs.org/" target="_blank" title="AngularJS">AngularJS</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</footer>
+
+<!-- JS script files -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/pm_ui_kit.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="angular.min.js"></script>
+<script src="angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="views/home/view.js"></script>
+<script src="views/howto/view.js"></script>
+<script src="views/icons/view.js"></script>
+<script src="views/examples/view.js"></script>
+<script src="views/impressum/view.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+
+</body>
+</html>
