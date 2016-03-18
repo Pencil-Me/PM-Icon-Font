@@ -1,0 +1,34 @@
+{
+  "GetAllCardsResult": [
+
+    {
+      "icon": "workcross",
+      "title": "Ein Font, 200+ Icons",
+      "text": "Das PM-Iconset bietet mehr als 200 Pictogrammen in einer einzigen Font-Sammlung."
+    },
+    {
+      "icon": "css3",
+      "title": "Volle Kontrolle mit CSS",
+      "text": "Egal ob Farbe, Größe, Schatten oder sogar Animation: Die volle Kontrolle dank CSS."
+    },
+    {
+      "icon": "arrows-zoomout",
+      "title": "Unendliche Skalierbarkeit",
+      "text": "Das PM-Iconset besteht aus Vektorgrafiken. Das bedeutet, das die Icons immer gestochen scharf sind, egal in welcher Größe."
+    },
+    {
+      "icon": "cc",
+      "title": "Frei Nutzung",
+      "text": "PM-Iconset ist frei nutzbar für auch kommerzielle Zwecke, ausser der direkte Weiterverkauf."},
+    {
+      "icon": "desktop",
+      "title": "Desktopfreundlich",
+      "text": "Um das PM-Iconset auf dem Desktop zu verwenden, einfach die Referenzliste für Sonderzeichen nutzen."
+    },
+    {
+      "icon": "search",
+      "title": "Screen-Reader-kompatibel",
+      "text": "Das PM-Iconset ist, entgegen anderer Iconsets, barrierefrei konzipiert. Ein Leseprogramm wird daher keinen Buchstabensalat ausgeben."
+    }
+  ]
+}

@@ -20,4 +20,18 @@ angular.module('myApp.home', ['ngRoute'])
                 $(this).parent().addClass('active');
             }
         });
-    }]);
+    }])
+    .controller('CardsController', function CardsController($scope, $http) {
+
+        $scope.listOfCards = null;
+
+        $http.get('json/home.json')
+            .success(function (data) {
+                $scope.listOfCards = data.GetAllCardsResult;
+            })
+            .error(function (data, status, headers, config) {
+                $scope.errorMessage = "Couldn't load the list of cards, error # " + status;
+            });
+
+        $(window).trigger('resize');
+    });
